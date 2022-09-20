@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marriage</title>
+
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+          font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+  
+        #map {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: 100%;
+        }
+  
+        h1 {
+          font-size: 20px;
+          line-height: 30px;
+        }
+  
+        h2 {
+          font-size: 14px;
+          line-height: 20px;
+          margin-bottom: 10px;
+        }
+  
+        a {
+          text-decoration: none;
+          color: #2dc4b2;
+        }
+  
+        #console {
+          position: absolute;
+          margin: 10px;
+          width: 400px;
+          background-color: white;
+          padding: 10px 20px;
+        }
+  
+        .session {
+          margin-bottom: 20px;
+        }
+  
+        .row {
+          height: 12px;
+          width: 100%;
+        }
+  
+        .colors {
+          background: linear-gradient(
+            to right,
+            #2dc4b2,
+            #3bb3c3,
+            #669ec4,
+            #8b88b6,
+            #a2719b,
+            #aa5e79
+          );
+          margin-bottom: 5px;
+        }
+  
+        .label {
+          width: 15%;
+          display: inline-block;
+          text-align: center;
+        }
+      </style>
+
+</head>
+<body>
+    <div id="console">
+        <h1>Hi Di, <br><br>
+            How are you? <br> 
+            Today I would like to share this with you. <br>
+        </h1>
+
+        <p align="right"><a href="https://reconjohn.github.io/">- Yohan</a></p>
+        <button>Click</button>
+
+        <div id="sep202022" style="display:none;">
+            <h2>
+                Where do we position ourselves for the best result? <br>
+            </h2>
+            <img src="https://slideplayer.com/slide/16585385/96/images/44/Game+Theory+and+Marital+Health.jpg" alt="game-theory"
+            width="500" height="400">
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" 
+    crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#sep202022").toggle();
+            });
+        });
+    </script>
+
+</body>
+</html>
